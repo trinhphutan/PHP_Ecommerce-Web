@@ -15,10 +15,9 @@ session_start();
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Icon  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/icon-website.png">
 </head>
 
 <body>
@@ -108,11 +107,11 @@ session_start();
                                         $total_price += $product_values;
 
                             ?>
-                            <tr>
-                                <td><?php echo $product_title ?></td>
-                                <td><img src="./admin_area/product_images/<?php echo $product_image1 ?>" alt=""></td>
-                                <td><input type="text" name="quantity"></td>
-                                <?php
+                                        <tr>
+                                            <td><?php echo $product_title ?></td>
+                                            <td><img src="./admin_area/product_images/<?php echo $product_image1 ?>" alt=""></td>
+                                            <td><input type="text" name="quantity"></td>
+                                            <?php
                                             global $conn;
                                             $get_ip_address = getIPAddress();
                                             if (isset($_POST['update-cart-btn'])) {
@@ -122,21 +121,21 @@ session_start();
                                                 $total_price = $total_price * $quantities;
                                             }
                                             ?>
-                                <td><?php echo $product_price_table ?>/-</td>
-                                <!-- removeItem[]: cho phép chọn nhiều mặ hàng để xóa -->
-                                <!-- value="<?php echo $product_id ?>": ID của sản phẩm tương ứng trong giỏ hàng, 
+                                            <td><?php echo $product_price_table ?>/-</td>
+                                            <!-- removeItem[]: cho phép chọn nhiều mặ hàng để xóa -->
+                                            <!-- value="<?php echo $product_id ?>": ID của sản phẩm tương ứng trong giỏ hàng, 
                                                                                 để bạn có thể biết sản phẩm nào được chọn để xóa. -->
-                                <td><input type="checkbox" name="removeItem[]" value="<?php echo $product_id ?>" id="">
-                                </td>
-                                <td>
-                                    <button type="submit" value="" name="update-cart-btn" class="update-cart-btn">
-                                        <p>Update</p>
-                                    </button>
-                                    <button class="remove-cart-btn" type="submit" value="" name="remove-cart-btn">
-                                        <p>Remove</p>
-                                    </button>
-                                </td>
-                            </tr>
+                                            <td><input type="checkbox" name="removeItem[]" value="<?php echo $product_id ?>" id="">
+                                            </td>
+                                            <td>
+                                                <button type="submit" value="" name="update-cart-btn" class="update-cart-btn">
+                                                    <p>Update</p>
+                                                </button>
+                                                <button class="remove-cart-btn" type="submit" value="" name="remove-cart-btn">
+                                                    <p>Remove</p>
+                                                </button>
+                                            </td>
+                                        </tr>
                             <?php      }
                                 }
                             } else {

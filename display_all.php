@@ -15,10 +15,9 @@ session_start();
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Icon  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/icon-website.png">
 </head>
 
 <body>
@@ -108,8 +107,7 @@ session_start();
                 </ul>
             </div>
             <div class="product-container">
-                <img src="https://img.pikbest.com/backgrounds/20210618/blue-grocery-store-online-shopping-banner-template_6021411.jpg!bw700"
-                    class="banner" alt="banner">
+                <img src="https://img.pikbest.com/backgrounds/20210618/blue-grocery-store-online-shopping-banner-template_6021411.jpg!bw700" class="banner" alt="banner">
                 <div class="card-list">
                     <?php
                     // call function from common_function.php 

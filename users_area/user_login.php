@@ -12,15 +12,15 @@ include('../functions/common_function.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Website - Login</title>
+    <link rel="icon" href="../assets/img/icon-website.png">
+
     <link rel="stylesheet" href="../assets/css/user.css">
     <!-- reset css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Icon  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -32,15 +32,13 @@ include('../functions/common_function.php');
             <!-- username -->
             <div class="box-item d-f">
                 <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off"
-                    required="required">
+                <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off" required="required">
             </div>
 
             <!-- password -->
             <div class="box-item d-f">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Enter your password"
-                    autocomplete="off" required="required">
+                <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off" required="required">
             </div>
 
             <button type="submit" name="login" class="login-btn">
